@@ -1,71 +1,20 @@
 #include <stdio.h>
 
-
+#include <unistd.h>
 
 /**
+ * main - prints exactly and that piece of art is useful
  *
- *  * main -  prints all possible different combinations of three digits.
- *
- *   * Return: Always 0 (Success)
- *
- *    */
-
-
-
+ * Return: Always 0 (Success)
+ */
 int main(void)
 
 {
 
-		int ones = '0';
+	write(2, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", 59);
 
-			int tens = '0';
-
-				int hundreds = '0';
+	return (1);
 
 
 
-					for (hundreds = '0'; hundreds <= '9'; hundreds++)
-
-							{
-
-										for (tens = '0'; tens <= '9'; tens++)
-
-													{
-
-																	for (ones = '0'; ones <= '9'; ones++)
-
-																					{
-
-																										if (!((ones == tens) || (tens == hundreds) || 
-
-																																				(tens > ones) || (hundreds > tens))) /*eliminates repitition*/
-
-																															{
-
-																																					putchar(hundreds);
-
-																																										putchar(tens);
-
-																																															putchar(ones);
-
-																																																				if (!(ones == '9' && hundreds == '7' && 
-
-																																																															tens == '8')) /*adds commas and spaces*/
-
-																																																										{
-
-																																																																	putchar(',');
-
-																																																																							putchar(' ');
-
-																																																																												}
-
-																																																								}
-
-																													}
-
-																			}
-
-											}
-
-						putchar('\n');
+}
