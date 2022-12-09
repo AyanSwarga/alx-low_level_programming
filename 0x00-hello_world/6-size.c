@@ -10,12 +10,14 @@
 
  *
 
- * Return: Always 0 (Success)
+ * Return: Always (0) (Success)
 
  */
 
 
-
+/**
+ * main - this the starting point of main function
+ */
 int main(void)
 
 {
