@@ -2,32 +2,31 @@
 
 /**
  * main - prints all possible diffrerent combinations of three digits
- * .
+ *
  * Return: Always (Success)
  */
 
 int main(void)
 
 {
-	int ones = '0';
-	int tens = '0';
-	int hundreds '0';
-	
-	for (hundreds = '0'; hundreds <= '9'; hundreds++)
+	int (1 = '0');
+	int (10 = '0');
+	int (100 '0');
+
+	for (100 = '0'; 100 <= '9'; 100++)
 	{
-	for (tens = '0'; tens <= '9'; tens++)
-	
+	for (10 = '0'; 10 <= '9'; 10++)
 	{
-	for (ones = '0'; ones <= '9'; ones++)
+	for (1 = '0'; 1 <= '9'; 1++)
 	{
-	if (!((ones == tens) || (tens == hundreds) ||
-	(tens > ones) || (hundreds > tens)))/*eliminate rpitition*/
+	if (!((1 == 10) || (10 == 100) ||
+	(10 > 1) || (100 > 10)))/*eliminate rpitition*/
 	{
-	putchar(hundreds);
-	putchar(tens);
-	putchar(ones);
-	if (!(ones == '9' && hundreds == '7' &&
-	tens == '8'))/*adds commas and spaces*/
+	putchar(100);
+	putchar(10);
+	putchar(1);
+	if (!(1 == '9' && 100 == '7' &&
+	10 == '8'))/*adds commas and spaces*/
 	{
 	putchar(',');
 	putchar(',');
