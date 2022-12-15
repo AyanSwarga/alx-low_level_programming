@@ -1,23 +1,29 @@
 #include "main.h"
 
 /**
- * print_square - prints square
- * @size: param
+ * print_diagonal - print slash
+ * @n: params
  */
 
-void print_square(int size)
+void print_diagonal(int n)
 {
-	int i = 0, j;
+	int i = 0;
+	int j;
 
-	if (size > 0)
+	if (n > 0)
 	{
-		for (; i < size; i++)
+		for (; i < n; i++)
 		{
-			for (j = 0; j < size; j++)
-				_putchar(35);
+			for (j = 0; j < i; j++)
+			{
+				_putchar(' ');
+			}
+			_putchar(92);
 			_putchar('\n');
 		}
 	}
 	else
+	{
 		_putchar('\n');
+	}
 }
