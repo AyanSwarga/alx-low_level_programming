@@ -1,9 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - not magic
- *
- *
+ * main - entry point
  * Return: 0
  */
 int main(void)
