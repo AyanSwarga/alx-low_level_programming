@@ -1,6 +1,13 @@
 #include <stdio.h>
 
+/**
+ * main - not magic
+ *
+ * @: line of code
+ * Return: 0
+ */
 int main(void)
+
 {
 	int n;
 	int a[5];
