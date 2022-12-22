@@ -3,7 +3,7 @@
 /**
  * main - not magic
  *
- * @: line of code
+ *
  * Return: 0
  */
 int main(void)
