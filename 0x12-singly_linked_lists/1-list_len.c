@@ -1,19 +1,29 @@
-nclude "lists.h"
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include "lists.h"
+
 /**
- * list_len - returns the number of elements in a list.
- * @h: singly linked list.
- * Return: number of elements in the list.
+ * print_list - check the code for Holberton School students.
+ * @h: name of the list
+ * Return: the number of nodes.
  */
-size_t list_len(const list_t *h)
+size_t print_list(const list_t *h)
 {
-	size_t count;
+	int count = 0;
 
-	count = 0;
-	while (h != NULL)
+	while (h)
 	{
-		h = h->next;
+		if (h->str == NULL)
+		{
+			printf("[0] (nil)\n");
+		}
+		else
+		{
+		printf("[%d] %s\n", h->len, h->str);
+		}
 		count++;
+		h = h->next;
 	}
-
 	return (count);
 }
