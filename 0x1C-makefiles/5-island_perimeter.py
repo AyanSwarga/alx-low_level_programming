@@ -1,7 +1,5 @@
 #!/usr/bin/python3
 """This module calculates and returns the perimeter of island describe in a grid."""
-
-
 def num_water_neighbors(grid, i, j):
     """This function returns the number of water neighbors a cell has in a grid."""
 
